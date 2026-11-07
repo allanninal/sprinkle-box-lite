@@ -214,6 +214,19 @@
 .is-style-open-status[data-state="open"]::before { opacity: 1; background: var(--wp--preset--color--accent); }
 .editor-styles-wrapper .is-style-open-status:empty { display: flex; }
 
+/* Order cut-off: the script writes the line from the order-ahead rules; empty
+   (and hidden) when there are none. A line the owner typed stays as written
+   until the script can replace it. */
+.is-style-order-cutoff:empty { display: none; }
+.is-style-order-cutoff { font-weight: 600; }
+.editor-styles-wrapper .is-style-order-cutoff:empty { display: block; min-height: 1.5em; outline: 1px dashed currentColor; }
+
+/* Schedule: one item per time; the script marks what is out and what is next. */
+.wp-block-list.is-style-schedule { list-style: none; padding: 0; margin-block: 1rem 0; display: grid; gap: 0.5rem; }
+.wp-block-list.is-style-schedule li { margin: 0; padding: 0.75rem 1rem; border: 1px solid color-mix(in srgb, currentColor 25%, transparent); border-radius: 0.75rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 1rem; }
+.wp-block-list.is-style-schedule li[data-label]::after { content: attr(data-label); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; align-self: center; }
+.wp-block-list.is-style-schedule li[data-state="next"] { border-color: var(--wp--preset--color--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--wp--preset--color--accent) 30%, transparent); }
+
 /* Journal cards and Contact Form 7. */
 .wp-block-post-template .wp-block-post-title a { text-decoration: none; }
 .wp-block-post-template .wp-block-post-date { font-size: 0.875rem; color: var(--wp--preset--color--text-muted); }

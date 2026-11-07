@@ -4,7 +4,7 @@ Tags: block-patterns, full-site-editing, one-column, wide-blocks, editor-style, 
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,9 @@ Photographs in assets/images are not under the GPL: each is under its source's l
 * Site icon (assets/images/site-icon.png): original artwork by Allan Niñal, GPLv2 or later.
 
 == Changelog ==
+
+= 1.0.1 =
+* Added: a “Schedule” list style that marks what is out now and what is next through the day; the menu board pattern shows the day's schedule.
 
 = 1.0.0 =
 * First release, published on GitHub (github.com/allanninal/sprinkle-box-lite).

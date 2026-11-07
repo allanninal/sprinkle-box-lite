@@ -22,6 +22,9 @@ ob_start();
 <!-- wp:heading -->
 <h2 class="wp-block-heading"><?php echo esc_html__( 'The Menu', 'sprinkle-box-lite' ); ?></h2>
 <!-- /wp:heading -->
+<!-- wp:paragraph {"placeholder":"Order cut-off (filled in from WooCommerce > Settings > Shipping > Order ahead)","className":"is-style-order-cutoff"} -->
+<p class="is-style-order-cutoff"></p>
+<!-- /wp:paragraph -->
 <!-- wp:group {"layout":{"type":"default"},"className":"menu-board__group"} -->
 <div class="wp-block-group menu-board__group">
 <!-- wp:heading {"level":3} -->
@@ -461,6 +464,25 @@ ob_start();
 <!-- wp:paragraph {"className":"ds-lede ds-allergens"} -->
 <p class="ds-lede ds-allergens"><?php echo esc_html__( 'Our kitchen handles wheat, dairy, eggs, hazelnuts and coconut, so we cannot promise any item is free of them, even those marked vegan or gluten free. Please ask about allergens before you order.', 'sprinkle-box-lite' ); ?></p>
 <!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php echo esc_html__( 'Fresh batches today', 'sprinkle-box-lite' ); ?></h3>
+<!-- /wp:heading -->
+<!-- wp:list {"className":"is-style-schedule"} -->
+<ul class="wp-block-list is-style-schedule">
+<!-- wp:list-item -->
+<li><?php echo esc_html__( '7:00 AM · First batch: classic glaze, sprinkles and old fashioneds', 'sprinkle-box-lite' ); ?></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><?php echo esc_html__( '9:00 AM · Filled donuts: Boston cream, lemon curd and jam', 'sprinkle-box-lite' ); ?></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><?php echo esc_html__( '11:00 AM · Cake donuts: funfetti, chocolate and apple cider', 'sprinkle-box-lite' ); ?></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><?php echo esc_html__( '12:30 PM · Last fry: whatever is selling fastest', 'sprinkle-box-lite' ); ?></li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
 </section>
 <!-- /wp:group -->
 <?php
